@@ -1,4 +1,4 @@
-# vic20_rpg
+# Vic20 Action RPG with GameMaker
 Action RPG created with Victor. GameMaker. Just for fun
 
 
