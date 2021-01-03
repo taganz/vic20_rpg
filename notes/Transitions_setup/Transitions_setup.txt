@@ -1,0 +1,56 @@
+CREATION CODE EN obj_transition_nou
+targetEntryCode = "E";
+targetRoom = rm_preso_sigilo;
+player_direction_entering = 180;   // si es -1 no es controla
+	
+
+
+
+TRANSICIONS NOVES
+
+Room_Transition
+- es un objecte que guarda les entries de cada habitacio
+- una entry es el nom de l'habituacio + "_" + codi entry 
+	p.ex. "rm_cella_S" per la porta sur
+- cada entry te x, y, direccio player after
+
+obj_transition_nou
+- tres parametres
+
+	targetEntryCode = "E";
+	targetRoom = rm_preso_sigilo;
+	player_direction_entering = 180;   // si es -1 no es controla
+	
+	
+- el player construira el spawnEntry concatenant el nom de la targetRoom amb "_" i targetEntryCode 
+- amb aixo buscara el x i la y en game.room_transition
+	
+player (script player_room_transition)
+- detecta colisio 
+- posa les variables de l'obj_transition en variables del jugador
+- posa "doTransition"
+
+game
+- en draw_gui si doTransition fa un efecte i canvia de room. posa el player on toca
+
+
+
+
+
+
+TRANSICIONS ANTIGUES
+
+obj_transition   <---- A DESAPAREIXER
+- els parametres de desti entan en creation code
+- si spawn? == -1 agafa la posicio del player
+- El player ha d'estar en orientacio "before" per a que s'activi
+
+player (script player_room_transition)
+- detecta colisio 
+- posa les variables de l'obj_transition en variables del jugador
+- posa "doTransition"
+
+game
+- en draw_gui si doTransition fa un efecte i canvia de room. posa el player on toca
+
+

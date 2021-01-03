@@ -1,0 +1,8 @@
+Keys
+ - ASDF, cursor: Movement
+ - SPACE: Attack
+ - 0: Debug toogle
+ - R: Game restart
+ - ESC: Game end
+ 
+ 

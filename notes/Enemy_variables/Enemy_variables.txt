@@ -1,0 +1,13 @@
+
+
+enemy_idle_time: Temps en idle abans de passar a wander. -1 si es queda sempre en idle.
+enemy_direction: Direccio on mira inicialment
+
+
+enemy_view_eyes_offset: Pixels des de la y del enemic fins els ulls, d'on surt la linia de vista
+
+enemy_distance_attack: si el player esta mes aprop l'ataca (attack)
+
+enemy_image_scale: si vull escalar un LPC es pot fer per aqui. ojo cal ajustar el enemy_hurtbox_scale_x,y
+enemy_hurtbox_scale_x,y: cal posar els pixels que tindra el hurtbox. es multiplicara per enemy_image_scale
+enemy_hurtbox_offset_x,y: offset per a punt de mirada per view. es multiplicara per enemy_image_scale

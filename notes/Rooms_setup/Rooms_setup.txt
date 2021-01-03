@@ -1,0 +1,25 @@
+COSES A FER A LES PANTALLES NOVES
+
+- Room editor: 
+	- Crear pantalla
+	- Posar obj_transitions_nou amb els destins
+- Rooms_Setup:
+	- Posar punts de arribada si els te en Rooms_Setup
+	- Marcar si es save room
+- obj_camera
+	- Posar noms si cal a obj_camera
+
+
+
+
+Tipus desert (nom= "rm_desert*")
+- tenen codi en camara.room_start
+	- viewport = visible, enabled
+- w,h: 800 x600
+- enable viewports: true
+- viewport 0. visible: true
+- camera follow obj_player
+- camera w/h: 750x420
+- border
+
+

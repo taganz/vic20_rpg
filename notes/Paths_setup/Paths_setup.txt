@@ -1,0 +1,1 @@
+si nom path comença per "path_circular" fa restart, si no tira endarrera
